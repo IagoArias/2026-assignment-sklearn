@@ -235,7 +235,7 @@ def get_estimator():
 
     model = make_pipeline(
             sklearn.compose.ColumnTransformer([
-                #Drop not wanted columns
+                #Drop the not wanted columns
                 ("drop_columns", "drop",
                 ["cancel_initiated", "user_id", "registration_month"]),
                 #Encodes categorical as one hot
